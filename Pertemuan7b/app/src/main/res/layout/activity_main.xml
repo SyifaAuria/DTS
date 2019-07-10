@@ -2,47 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity" >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/Lbl1"
-        android:textAlignment="center"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/Lbl1" />
+        android:text="@string/Lbl1"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/Edttxt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/Edttxt1"/>
+        android:text="@string/Edttxt1" />
 
     <Button
         android:id="@+id/Btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:onClick="Tampil_Hasil"
         android:text="@string/Btn1" />
 
     <TextView
         android:id="@+id/Lbl2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/Lbl2" />
 
     <TextView
         android:id="@+id/Lbl3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="Tampil_Hasil"
         android:text="@string/Lbl3" />
 </LinearLayout>
