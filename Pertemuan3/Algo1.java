@@ -22,6 +22,6 @@ public class Algo1 {
                 y=x*x;
                 
         }
-    System.out.println("Akar = " + x);
+    System.out.println("Akar adalah = " + x);
     }
 }
