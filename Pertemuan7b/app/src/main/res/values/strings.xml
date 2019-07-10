@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pertemuan7b</string>
+    <string name="Lbl1">Aplikasi Penampil Nama</string>
+    <string name="Edttxt1">Masukan nama anda</string>
+    <string name="Btn1">Tampilkan Nama</string>
+    <string name="Lbl2">Nama Anda adalah</string>
+    <string name="Lbl3"> </string>
+</resources>
