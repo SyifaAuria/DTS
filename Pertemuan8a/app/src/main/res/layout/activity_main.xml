@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Lbl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/Lbl1" />
+
+    <EditText
+        android:id="@+id/Edttxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Edttxt1" />
+
+    <EditText
+        android:id="@+id/Edttxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Edttxt2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:onClick="Tampil_Tambah"
+            android:text="@string/Btn1" />
+
+        <Button
+            android:id="@+id/Btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:onClick="Tampil_Kurang"
+            android:text="@string/Btn2" />
+
+        <Button
+            android:id="@+id/Btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:onClick="Tampil_Kali"
+            android:text="@string/Btn3" />
+
+        <Button
+            android:id="@+id/Btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:onClick="Tampil_Bagi"
+            android:text="@string/Btn4" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Tampil_Bersihkan"
+        android:text="@string/Btn5" />
+
+    <TextView
+        android:id="@+id/Lbl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/Lbl2" />
+
+    <TextView
+        android:id="@+id/Lbl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/Lbl3" />
+</LinearLayout>

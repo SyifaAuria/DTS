@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pertemuan8a</string>
+    <string name="Lbl1">Aplikasi Kalkulator</string>
+    <string name="Edttxt1">Masukan Angka Pertama</string>
+    <string name="Edttxt2">Masukan Angka Kedua</string>
+    <string name="Btn1">+</string>
+    <string name="Btn2">-</string>
+    <string name="Btn3">*</string>
+    <string name="Btn4">/</string>
+    <string name="Btn5">Bersihkan</string>
+    <string name="Lbl2">Hasil</string>
+    <string name="Lbl3"> </string>
+    <string name="Lbl4"> Aplikasi Penentu Ganjil Dan Genap </string>
+    <string name="Edttxt3"> Masukan Angka </string>
+    <string name="Btn6"> Tentukan </string>
+    <string name="Lbl5"> </string>
+</resources>
