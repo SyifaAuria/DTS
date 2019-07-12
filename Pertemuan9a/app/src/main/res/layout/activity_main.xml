@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Lbl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Aplikasi Penampil Data Mahasiswa" />
+
+    <EditText
+        android:id="@+id/Edttxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Masukan NPM" />
+
+    <EditText
+        android:id="@+id/Edttxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Masukan Nama" />
+
+    <EditText
+        android:id="@+id/Edttxt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Masukan Kampus" />
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Tampil_Hasil"
+        android:text="Tampilkan" />
+
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Tampil_Bersihkan"
+        android:text="Bersihkan" />
+
+    <TextView
+        android:id="@+id/Lbl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data anda adalah" />
+
+    <TextView
+        android:id="@+id/Lbl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" " />
+</LinearLayout>
