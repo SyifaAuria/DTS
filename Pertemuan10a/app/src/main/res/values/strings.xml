@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pertemuan10a</string>
+    <string name="Btn1">BUAT FILE</string>
+    <string name="Btn2">UBAH FILE</string>
+    <string name="Btn3">BACA FILE</string>
+    <string name="Btn4">HAPUS FILE</string>
+    <string name="textView">TextView</string>
+    <string name="Btn5">BUAT FILE</string>
+    <string name="Btn6">UBAH FILE</string>
+    <string name="Btn7">BACA FILE</string>
+    <string name="Btn8">HAPUS FILE</string>
+    <string name="textView2">TextView</string>
+    <string name="textView3">Program Database</string>\
+    <string name="Btn9">Internal</string>
+    <string name="Btn10">External</string>
+</resources>
