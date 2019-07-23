@@ -1,60 +1,70 @@
 package com.example.pertemuan11;
-import android.database.sqlite.SQLiteOpenHelper;
+
 import android.database.sqlite.SQLiteDatabase;
-import android.database.Cursor;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.util.Log;
 import java.util.ArrayList;
 
-
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static String DATABASE_NAME = "kampus.db";
+    public static String DATABASE_NAME = "student_database.db";
     private static final int DATABASE_VERSION = 1;
-    private static final String QUERY_CREATE = "CREATE TABLE mahasiswa(nim INTEGER PRIMARY KEY AUTOINCREMENT, nama_mhs TEXT);";
+    private static final String TABLE_STUDENTS = "students";
+    private static final String KEY_ID = "id";
+    private static final String KEY_FIRSTNAME = "name";
 
-    public DatabaseHelper(Context context) {
+    private static final String CREATE_TABLE_STUDENT = "CREATE TABLE "
+            + TABLE_STUDENTS + "(" + KEY_ID
+            + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_FIRSTNAME + " TEXT );";
+
+    public DatabaseHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        Log.d("table", QUERY_CREATE);
+
+        Log.d("table", CREATE_TABLE_STUDENT);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //jalankan query buat tabel
-        db.execSQL(QUERY_CREATE);
+        db.execSQL(CREATE_TABLE_STUDENT);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        //jalankan query apabila terdapat tabel mahasiswa disaat pertama kali launch
-        db.execSQL("DROP TABLE IF EXISTS 'mahasiswa'");
+        db.execSQL("DROP TABLE IF EXISTS '" + TABLE_STUDENTS + "'");
         onCreate(db);
     }
 
-    public long insertData(String input) {
-        // Coding insert data ke table
+    public long addStudentDetail(String student){
         SQLiteDatabase db = this.getWritableDatabase();
+        //Creating content values
         ContentValues values = new ContentValues();
-        values.put("nama_mhs", input);
-        long insert = db.insert("mahasiswa", null, values);
-        return insert;
+        values.put(KEY_FIRSTNAME, student);
+        //insert row in students table
+        long insert = db.insert(TABLE_STUDENTS,
+                null, values);
+
+        return  insert;
     }
 
-    public ArrayList<String> getAllDataList() {
-        // Coding view data dari table
-        ArrayList<String> dataArrayList = new ArrayList<String>();
-        String cache="";
-        String selectQuery = "SELECT  * FROM 'mahasiswa'";
+    public ArrayList<String> getAllStudentsList(){
+        ArrayList<String> studentsArrayList = new ArrayList<String>();
+        String name="";
+        String selectQuery = "SELECT * FROM " + TABLE_STUDENTS;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = db.rawQuery(selectQuery, null);
-        // looping semua data pada dan dimasukkan ke arraylist
-        if (c.moveToFirst()) {
+        //looping through all rows and adding to list
+        if (c.moveToFirst()){
             do {
-                cache = c.getString(c.getColumnIndex("nama_mhs"));
-                dataArrayList.add(cache);
+                name = c.getString(c.getColumnIndex(KEY_FIRSTNAME));
+                //adding to Student list
+                studentsArrayList.add(name);
             } while (c.moveToNext());
-            Log.d("array", dataArrayList.toString());
+            Log.d("array",studentsArrayList.toString());
         }
-        return dataArrayList;
+        return studentsArrayList;
     }
 }
+
+

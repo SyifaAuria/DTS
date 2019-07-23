@@ -1,4 +1,4 @@
-package com.example.pertemuan11;
+package com.example.aplikasisqlite;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.pertemuan11", appContext.getPackageName());
+        assertEquals("com.example.aplikasisqlite", appContext.getPackageName());
     }
 }
