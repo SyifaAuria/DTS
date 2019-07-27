@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Username"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:background="@color/colorPrimary"
+        android:height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginHorizontal="10dp"
+        android:onClick="login"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:background="@color/colorPrimary"
+        android:height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:layout_marginHorizontal="10dp"
+        android:onClick="keluar"
+        />
+
+</LinearLayout>
